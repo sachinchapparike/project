@@ -1,0 +1,148 @@
+
+<!--session start here-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	{% load staticfiles %}
+    <title>Home | EDUCART</title>
+    <link href="{% static 'educart/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'educart/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'educart/css/prettyPhoto.css' %}" rel="stylesheet">
+    <link href="{% static 'educart/css/price-range.css' %}" rel="stylesheet">
+    <link href="{% static 'educart/css/animate.css' %}" rel="stylesheet">
+	<link href="{% static 'educart/css/main.css' %}" rel="stylesheet">
+	<link href="{% static 'educart/css/responsive.css' %}" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="{% static 'educart/images/ico/favicon.ico' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'educart/images/ico/apple-touch-icon-144-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'educart/images/ico/apple-touch-icon-114-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'educart/images/ico/apple-touch-icon-72-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'educart/images/ico/apple-touch-icon-57-precomposed.png' %}">
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="/educart"><img src="{% static 'educart/images/home/logo.png'%}" alt="" /></a>
+						</div>
+						<div class="btn-group pull-right">
+							
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+							<!--	<li><a href=""><i class="fa fa-user"></i> Account</a></li>-->
+							<!--	<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>-->
+                               
+								<li><a href="/educart/login"><i class="fa fa-lock"></i> Login</a></li>
+                                 
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="/educart/index">Home</a></li>
+								
+								
+								<li><a href="/educart/upld" class="active">Upload Product</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+	<section id="form"><!--form-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1">
+					<div class="login-form"><!--login form-->
+						<h2>Login to your account</h2>
+						<form action="/educart/login/" method="post">{% csrf_token %}
+							<input type="email" placeholder="Email" required="required" name="email1" />
+							<input type="password" placeholder="Password"required="required" name="password1"/>
+							<span>
+								<input type="checkbox" class="checkbox"> 
+								Keep me signed in
+							</span>
+							<button type="submit" class="btn btn-default" name="submit">Login</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-sm-1">
+					<h2 class="or">OR</h2>
+				</div>
+				<div class="col-sm-4">
+					<div class="signup-form"><!--sign up form-->
+						<h2>New User Signup!</h2>
+						<form action="/educart/signup/" method="post">{% csrf_token %}
+							<input type="text" placeholder="Name" name="name" required="required"/>
+							<input type="email" placeholder="Email Address" name="email" pattern="[/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please enter a valid email address']" required="required" />
+							<input type="password" placeholder="Password" name="password" required="required"/>
+							<button type="submit" class="btn btn-default" name="submit">Signup</button>
+						</form>
+					</div>
+
+				</div>
+                
+			</div>
+		</div>
+       
+	</section><!--/form-->
+
+  
+    <script src="{% static 'educart/js/jquery.js'%}"></script>
+	<script src="{% static 'educart/js/bootstrap.min.js'%}"></script>
+	<script src="{% static 'educart/js/jquery.scrollUp.min.js'%}"></script>
+	<script src="{% static 'educart/js/price-range.js'%}"></script>
+    <script src="{% static 'educart/js/jquery.prettyPhoto.js'%}"></script>
+    <script src="{% static 'educart/js/main.js'%}"></script>
+</body>
+</html>

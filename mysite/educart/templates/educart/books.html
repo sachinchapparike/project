@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	{% load staticfiles %}
+    <title>Home | EDUCART</title>
+    <link href="{% static 'educart/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'educart/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'educart/css/prettyPhoto.css' %}" rel="stylesheet">
+    <link href="{% static 'educart/css/price-range.css' %}" rel="stylesheet">
+    <link href="{% static 'educart/css/animate.css' %}" rel="stylesheet">
+	<link href="{% static 'educart/css/main.css' %}" rel="stylesheet">
+	<link href="{% static 'educart/css/responsive.css' %}" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="{% static 'educart/images/ico/favicon.ico' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'educart/images/ico/apple-touch-icon-144-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'educart/images/ico/apple-touch-icon-114-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'educart/images/ico/apple-touch-icon-72-precomposed.png' %}">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'educart/images/ico/apple-touch-icon-57-precomposed.png' %}">
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						
+					</div>
+					<!--<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>-->
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="#"><img src="{% static 'educart/images/home/logo.png'%}" alt="" /></a>
+						</div>
+						<!--<div class="btn-group pull-right">
+						<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									USA
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Canada</a></li>
+									<li><a href="#">UK</a></li>
+								</ul>
+							</div>
+							
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									DOLLAR
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Canadian Dollar</a></li>
+									<li><a href="#">Pound</a></li>
+								</ul>
+							</div>
+						</div>-->
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+							<!--	<li><a href="#"><i class="fa fa-user"></i> Account</a></li>-->
+								<!--<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>-->
+							<!--	<li><a href="login.php"><i class="fa fa-lock"></i> Login</a></li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="/educart/index" class="active">Home</a></li>
+								<!--<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="shop.html">Products</a></li>
+										<li><a href="product-details.html">Product Details</a></li> 
+										<li><a href="checkout.html">Checkout</a></li> 
+										<li><a href="cart.html">Cart</a></li> 
+										<li><a href="login.html">Login</a></li> 
+                                    </ul>
+                                </li> -->
+								
+								
+								<li><a href="/educart/upld">Upload Product</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<!--<div class="search_box pull-right">
+							<input type="text" placeholder="Search"/>
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+	<section id="advertisement">
+        <div class="container">
+            <img src="{% static 'educart/images/shop/advertisement.jpg' %}" alt="" />
+        </div>
+    </section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2>Category</h2>
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<!--<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Sportswear
+										</a>-->
+									</h4>
+								</div>
+								<!--<div id="sportswear" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">Nike </a></li>
+											<li><a href="#">Under Armour </a></li>
+											<li><a href="#">Adidas </a></li>
+											<li><a href="#">Puma</a></li>
+											<li><a href="#">ASICS </a></li>
+										</ul>
+									</div>
+								</div>-->
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<!--<a data-toggle="collapse" data-parent="#accordian" href="#mens">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Mens
+										</a>-->
+									</h4>
+								</div>
+							<!--	<div id="mens" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">Fendi</a></li>
+											<li><a href="#">Guess</a></li>
+											<li><a href="#">Valentino</a></li>
+											<li><a href="#">Dior</a></li>
+											<li><a href="#">Versace</a></li>
+											<li><a href="#">Armani</a></li>
+											<li><a href="#">Prada</a></li>
+											<li><a href="#">Dolce and Gabbana</a></li>
+											<li><a href="#">Chanel</a></li>
+											<li><a href="#">Gucci</a></li>
+										</ul>
+									</div>
+								   </div>-->
+								</div>
+							
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<!--<a data-toggle="collapse" data-parent="#accordian" href="#womens">-->
+										<!--	<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											
+										</a>-->
+									</h4>
+								</div>
+								<!--<div id="womens" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">Fendi</a></li>
+											<li><a href="#">Guess</a></li>
+											<li><a href="#">Valentino</a></li>
+											<li><a href="#">Dior</a></li>
+											<li><a href="#">Versace</a></li>
+										</ul>
+									</div>
+								</div>-->
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="/educart/electronics">Electronic Gadgets</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="/educart/appliance">Electronic Applaince</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="/educart/shoes">Shoes</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="/educart/appreals">Clothing & Jackets</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="/educart/furniture">Furniture & Bedding</a></h4>
+								</div>
+							</div>
+                            
+                            <div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="/educart/books">Books & Stationary</a></h4>
+								</div>
+							</div>
+							
+						</div><!--/category-products-->
+						<div class="shipping text-center"><!--shipping-->
+							<img src="{% static 'educart/images/home/shipping.jpg' %}" alt="" />
+						</div><!--/shipping-->
+					
+					</div>
+				</div>
+			<!--	<div class="col-sm-9 padding-right">
+                    <div class="features_items">
+                        <!--features_items-->
+                        <h2 class="title text-center">Features Items</h2>
+
+                        <!-- Dynamic Data -->
+                        {% block dataDictSet %}
+						{% for d in dataDict %}
+                        <div class="col-sm-3">
+                            <div class="product-image-wrapper">
+                                <div class="single-products">
+                                    <div class="productinfo text-center">
+                                        <img src="/static/educart/uploads/{{d.iurl}}" alt="" />
+                                        <h2>{{d.productprice}}</h2>
+                                        <p>{{d.name}}</p>
+                                        <a href="/educart/product_details?cat=books&id={{d.id}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Send</a> 
+                                    </div>
+                                    <div class="product-overlay">
+                                        <div class="overlay-content">
+                                            <h2>{{d.productprice}}</h2>
+                                            <p>{{d.name}}</p>
+                                         <a href="/educart/product_details?cat=books&id={{d.id}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Send</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						{% endfor %}
+						{% endblock %}
+                        <!-- Dynamic Data Ends Here-->
+                    </div>
+                    <!--features_items-->
+                </div>
+            </div>
+        </div>
+    </section>
+				{% block content %}
+        <h1>{{name}}</h1>
+        {{email}}
+		{{ObjectId}}
+        {% endblock %}
+<h1>{{iurl}}</h1>
+
+
+	
+
+    <script src="{% static 'educart/js/jquery.js'%}"></script>
+	<script src="{% static 'educart/js/bootstrap.min.js'%}"></script>
+	<script src="{% static 'educart/js/jquery.scrollUp.min.js'%}"></script>
+	<script src="{% static 'educart/js/price-range.js'%}"></script>
+    <script src="{% static 'educart/js/jquery.prettyPhoto.js'%}"></script>
+    <script src="{% static 'educart/js/main.js'%}"></script>
+</body>
+
+
+
+</html>
